@@ -1,0 +1,19 @@
+{
+  "name": "ga-navigation-timing",
+  "version": "0.1.0",
+  "description": "ga-navigation-timing ====================",
+  "main": "ga-navigation-timing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/1987yama3/ga-navigation-timing.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4"
+  }
+}
