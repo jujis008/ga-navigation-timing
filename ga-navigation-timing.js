@@ -11,7 +11,6 @@ function gaPerformance () {
       if (typeof value !== 'undefined' && value < 0) {
          return;
       }
-      console.log({category: category, action: action, label: label, value: value, opt_noninteraction: opt_noninteraction});
       if (typeof _gaq !== 'undefined' && typeof _gaq.push === 'function') {
          _gaq.push(['_trackEvent', category, action, label, value, opt_noninteraction]);
       }
