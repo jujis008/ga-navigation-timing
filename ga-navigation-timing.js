@@ -19,9 +19,9 @@ function gaPerformance () {
       var navigation = window.performance.navigation;
       var timing = window.performance.timing;
 
-      sendEvent(undefined, 'Navigation', 'redirectCount', navigation.redirectCount, true);
+      sendEvent(undefined, 'Navigation', 'RedirectCount', navigation.redirectCount, true);
       sendEvent(undefined, 'Timing', 'Redirect', (timing.redirectEnd - timing.redirectStart), true);
-      sendEvent(undefined, 'Timing', 'ApplicationCache', (timing.domainLookupStart - timing.fetchStart), true);
+      sendEvent(undefined, 'Timing', 'Application Cache', (timing.domainLookupStart - timing.fetchStart), true);
       sendEvent(undefined, 'Timing', 'DNS Lookup', (timing.domainLookupEnd - timing.domainLookupStart), true);
       sendEvent(undefined, 'Timing', 'TCP Connection', (timing.connectEnd - timing.connectStart), true);
       sendEvent(undefined, 'Timing', 'Request Time', (timing.responseStart - timing.requestStart), true);
